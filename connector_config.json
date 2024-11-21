@@ -1,0 +1,16 @@
+{
+    "connector.class": "com.snowflake.kafka.connector.SnowflakeSinkConnector",
+    "errors.log.enable": "true",
+    "snowflake.database.name": "INGEST",
+    "snowflake.private.key": "$PRIVATE_KEY",
+    "snowflake.schema.name": "INGEST",
+    "snowflake.role.name": "INGEST",
+    "snowflake.url.name": "$URL",
+    "snowflake.user.name": "$SNOWFLAKE_USER",
+    "topics": "$KAFKA_TOPIC",
+    "name": "$NAME",
+    "buffer.size.bytes": "250000000",
+    "buffer.flush.time": "60",
+    "buffer.count.records": "1000000",
+    "snowflake.topic2table.map": "$KAFKA_TOPIC:$NAME"
+}
